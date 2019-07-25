@@ -13,7 +13,10 @@ import '@binaris/shift-babel-macro/macro';
  * a value directly, these functions return a Promise() to the return value,
  * so make sure to use .then() or await to get the actual response.
  */
-import { backendGet, backendIncrement } from '../backend/backend';
+import {
+  backendGetCounter,
+  backendIncrementCounter,
+} from '../backend/backend';
 
 import './index.css';
 
@@ -27,7 +30,7 @@ function Counter() {
    * returned from the backend.
    */
   if (count === undefined) {
-    backendGet()
+    backendGetCounter()
 
       /*
        * The backend returns the count value. This value is undefined
@@ -69,7 +72,7 @@ function Counter() {
    */
   function increment() {
     setCount(count + 1);
-    backendIncrement();
+    backendIncrementCounter();
   }
 
   return (

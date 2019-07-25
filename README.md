@@ -8,4 +8,4 @@ reloaded.
 This template is implemented using React Hooks. A class based versions is
 also available.
 
-\#counter \#noob \#hooks
+Keywords: counter noob react-hooks
