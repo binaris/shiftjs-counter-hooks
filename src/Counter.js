@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 /*
  * Make sure to import the ShiftJS macro before importing any backend
@@ -30,27 +30,36 @@ export default function Counter() {
    * to issue a call to the backend to get the initial count. Any backend
    * function returns a Promise() which is resolved with the value
    * returned from the backend.
+   *
+   * We issue the call to the backend inside useEffect(), so that it does
+   * not happen within the rendering stage of the component.
+   */
+  useEffect(() => {
+    if (count === undefined) {
+      counterGet()
+
+        /*
+         * The backend returns the count value. This value is undefined
+         * when the application is run for the first time, in which case
+         * we use the default value of zero.
+         */
+        .then(count => setCount(count || 0))
+
+        /*
+         * If the backend call generated an error, we set count to null.
+         * This will cause the page to display a simple error string (see
+         * below).
+         */
+        .catch(() => setCount(null));
+    }
+  });
+
+  /*
+   * We still need to check if counter is undefined in the rendering
+   * stage so that, the page will display this loading string until we
+   * get tan actual count value.
    */
   if (count === undefined) {
-    counterGet()
-
-      /*
-       * The backend returns the count value. This value is undefined
-       * when the application is run for the first time, in which case
-       * we use the default value of zero.
-       */
-      .then(count => setCount(count || 0))
-
-      /*
-       * If the backend call generated an error, we set count to null.
-       * This will cause the page to display a simple error string (see
-       * below).
-       */
-      .catch(() => setCount(null));
-
-    /*
-     * The page will display this string until we get the count value.
-     */
     return 'Loading...';
   }
 
