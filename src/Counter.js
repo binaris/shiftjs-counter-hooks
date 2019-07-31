@@ -19,6 +19,9 @@ import {
   counterIncrement,
 } from '../backend/counter';
 
+/**
+ * Counter component.
+ */
 export default function Counter() {
   const [ count, setCount ] = useState();
 
