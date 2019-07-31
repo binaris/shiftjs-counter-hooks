@@ -43,6 +43,8 @@ export default function Counter() {
 
       /*
        * If the backend call generated an error, we set count to null.
+       * This will cause the page to display a simple error string (see
+       * below).
        */
       .catch(() => setCount(null));
 
