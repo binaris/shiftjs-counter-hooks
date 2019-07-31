@@ -23,7 +23,7 @@ import {
  * Counter component.
  */
 export default function Counter() {
-  const [ count, setCount ] = useState();
+  const [count, setCount] = useState();
 
   /*
    * count is undefined when the component is first rendered. We use this
