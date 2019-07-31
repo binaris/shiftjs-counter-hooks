@@ -1,10 +1,6 @@
 {
   "short_name": "Counter",
   "name": "Counter Application Using React Hooks",
-  "tags": [
-    "react-hooks",
-    "beginner-level"
-  ],
   "icons": [
     {
       "src": "favicon.ico",
