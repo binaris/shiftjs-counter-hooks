@@ -1,6 +1,6 @@
 {
-  "name": "template-template",
-  "version": "0.1.1",
+  "name": "shiftjs-counter-hooks",
+  "version": "0.1.2",
   "private": true,
   "dependencies": {
     "@binaris/shift-babel-macro": "0.0.3",
@@ -33,6 +33,7 @@
       "last 1 safari version"
     ]
   },
+  "license": "MIT",
   "devDependencies": {
     "cypress": "^3.4.0"
   }
