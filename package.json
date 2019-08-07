@@ -35,6 +35,6 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "cypress": "^3.4.0"
+    "cypress": "^3.4.1"
   }
 }
