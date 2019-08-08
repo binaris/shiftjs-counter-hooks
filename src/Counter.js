@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
  * Make sure to import the ShiftJS macro before importing any backend
  * functions.
  */
-import '@binaris/shift-babel-macro/macro';
+import '@binaris/shift-code-transform/macro';
 
 import './Counter.css';
 
