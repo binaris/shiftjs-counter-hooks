@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 
 /*
- * Make sure to import the ShiftJS macro before importing any backend
+ * Make sure to import the Reshuffle macro before importing any backend
  * functions.
  */
-import '@binaris/shift-code-transform/macro';
+import '@reshuffle/code-transform/macro';
 
 import './Counter.css';
 
