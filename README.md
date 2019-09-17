@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/reshuffle/counter-hooks.svg?style=svg)](https://circleci.com/gh/reshuffle/counter-hooks)
+[![CircleCI](https://circleci.com/gh/reshufflehq/counter-hooks.svg?style=svg)](https://circleci.com/gh/reshufflehq/counter-hooks)
 
 This is a [Reshuffle](https://reshuffle.com/) template.
 
