@@ -10,4 +10,8 @@ reloaded.
 This template is implemented using React Hooks. A class based versions is
 also available.
 
-Keywords: counter level:noob arch:react-hooks stage:tutorial
+Keywords: counter, react-hooks, tutorial
+
+## Screenshots:
+
+<img src="./app-screen.png" width="30%" height="30%">
