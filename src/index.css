@@ -4,5 +4,5 @@ body {
 }
 
 #root {
-  background-image: linear-gradient(to bottom right, red, yellow);
+  background-image: linear-gradient(to bottom right, #9300ff, #32a7fb);
 }
